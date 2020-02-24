@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+.form {
+    width: 700px;
+    background-color:linear-gradient(90deg,#757575 0%, #3b3b3b 100%);
+}
+.pattern1 {
+  background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+  background-size: 8px 8px;
+}
+.font {
+  font-family: 'Odibee Sans';
+  letter-spacing: .10rem;
+}
+
+.btn-purple {
+  background-color: #4d00aa;
+}

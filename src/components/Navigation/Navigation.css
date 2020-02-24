@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+.green {
+    color: #00991c;
+  font-family: 'Odibee Sans';
+  letter-spacing: .25rem;
+}
+
+.nav-links {
+  width: 40%;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.logo {
+  text-decoration: none;
+}
