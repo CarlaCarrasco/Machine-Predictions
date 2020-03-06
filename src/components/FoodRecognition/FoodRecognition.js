@@ -34,14 +34,13 @@ class FoodRecognition extends Component{
       getFood = (data) => {
         const foodItems = data.outputs[0].data.concepts;
         const allFood = [];
-        console.log(foodItems);
-        foodItems.forEach(function (foodItems){
-          allFood.push({name: foodItems.name, value:foodItems.value});
-        });
+        let num = 0;
+        while(num < 10 ){
+          allFood.push({name: foodItems[num].name, value:foodItems[num].value});
+          num++;
+        }
+
         this.setState({colors: allFood});
-        console.log('AllFood: '+ allFood);
-        console.log(allFood[0].name)
-        // console.log(allColors[0].hex);
         return allFood;
       }
       displayFood = (food) => {
@@ -51,18 +50,18 @@ class FoodRecognition extends Component{
           const parent = document.getElementById('hexColors');
           const child = document.createElement("li");
           child.classList.add("flex", "justify-between");
-          child.innerHTML = '<span>' + food.name +'</span> <span>' + food.value +'</span> ';
-          parent.append(child);
-          // parent.append( colors.name + ' ' + colors.hex, child);
+            child.innerHTML = '<span>' + food.name +'</span> <span>' + food.value.toFixed(2) +'%</span> ';
+            parent.append(child);
+            console.log(`${food.name}: ${food.value}`);
         });
       }
 
       render (){ return (
         <div className="center flex flex-column">
             <h1 className="f1 green mt0">Food Prediction</h1>
-            <div className="br2 pa3 ba dark-gray b--black-10 center" style={{backgroundColor: '#202020'}}>
+            <div className="br2 pa3 ba dark-gray b--black-10 center flex-column flex-row-ns" style={{backgroundColor: '#202020'}}>
                 <div className="min-width mr3 green"> Image Goes Here
-                    <img src={this.state.imageUrl} className="default-img db br2 br--top" 
+                    <img src={this.state.imageUrl} className="default-img db br2 br--top center" 
                     alt='' width='auto' height='250'/>
                 </div>
                 <div className="min-width pa2 ph3-ns pb3-ns">

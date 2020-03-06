@@ -36,21 +36,21 @@ class FaceRecognition extends Component{
       displayResults = (data) => {
         console.log(data.name);
         document.getElementById('celebName').innerText = data.name;
-        document.getElementById('celebPercent').innerText = data.percent; 
+        document.getElementById('celebPercent').innerText = Math.floor(data.percent * 100) + '%'; 
       }
 
       render (){ return (
         <div className="center flex flex-column">
-            <h1 className="f1 green mt0">Celebrity Prediction</h1>
-            <div className="br2 pa3 ba dark-gray b--black-10 center" style={{backgroundColor: '#202020'}}>
+            <h1 className="f1 green mt0">Famous Prediction</h1>
+            <div className="br2 pa3 ba dark-gray b--black-10 center flex-column flex-row-ns" style={{backgroundColor: '#202020'}}>
                 <div className="min-width mr3 green"> Image Goes Here
-                    <img src={this.state.imageUrl} className="default-img db br2 br--top" 
+                    <img src={this.state.imageUrl} className="default-img db br2 br--top center" 
                     alt='' width='auto' height='250'/>
                 </div>
                 <div className="min-width pa2 ph3-ns pb3-ns">
                     <div className="flex justify-between green dt mt1 bb">
                     <div className="dtc tr">
-                        <h2 className="f4 mv0">Celebrity</h2>
+                        <h2 className="f4 mv0">Person</h2>
                     </div>
                     <div className="dtc tr">
                         <h2 className="f4 mv0">Probability</h2>
@@ -58,7 +58,7 @@ class FaceRecognition extends Component{
                     </div>
                     <ul id="hexColors" className="colorData pa0 green" style={{ listStyle: 'none'}}>
                         <li className="flex justify-between">
-                            <span id="celebName"></span>
+                            <span id="celebName" style={{textTransform: 'capitalize'}}></span>
                             <span id="celebPercent"></span>
                         </li>
                     </ul>             

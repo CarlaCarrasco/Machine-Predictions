@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
 .green {
     color: #00991c;
-  font-family: 'Odibee Sans';
   letter-spacing: .25rem;
 }
 
@@ -16,4 +15,11 @@
 
 .logo {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-links{
+      width: 70%;
+  }
+
 }

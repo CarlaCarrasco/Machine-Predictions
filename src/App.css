@@ -1,4 +1,7 @@
 .App {
+  font-family: Consolas,
+               monaco,
+               monospace;
   text-align: center;
 }
 

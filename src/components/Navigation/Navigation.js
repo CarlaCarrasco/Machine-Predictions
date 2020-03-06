@@ -10,17 +10,17 @@ const Navigation = ()=> {
                 <Logo />
             </Link>
             
-            <ul className="flex flex-row justify-around nav-links f2 b link white underline pa3 courier">
-                <Link className="grow f2 b link dim white" to="ColorRecognition">
+            <ul className="flex flex-row justify-around nav-links f4 f2-ns b link white underline pa3 courier">
+                <Link className="grow b link dim white" to="ColorRecognition">
                     <li>Color</li>
                 </Link>
-                <Link className="grow f2 b link dim white" to="FaceRecognition">
+                {/* <Link className="grow f2 b link dim white" to="FaceRecognition">
                     <li>Face</li>
-                </Link>
-                <Link className="grow f2 b link dim white" to="FamousRecognition">
+                </Link> */}
+                <Link className="grow b link dim white" to="FamousRecognition">
                     <li>Famous</li>
                 </Link>
-                <Link className="grow f2 b link dim white" to="FoodRecognition">
+                <Link className="grow b link dim white" to="FoodRecognition">
                     <li>Food</li>
                 </Link>
             </ul>

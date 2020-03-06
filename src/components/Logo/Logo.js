@@ -5,13 +5,13 @@ import './Logo.css'
 
 const Logo = ()=> {
     return (
-        <div className='ma2 flex flex-row '>
-            <Tilt className="Tilt br2 shadow-2" options={{ max : 25 }} style={{ height: 130, width: 130 }} >
-                <div className="Tilt-inner pa3">
+        <div className='ml2 mr2 mt2 mb0 flex flex-row '>
+            <Tilt className="Tilt br2 shadow-2 logo-image" options={{ max : 25 }}>
+                <div className="Tilt-inner pa1 pa3-ns">
                     <img src={ computer } alt="logo"/>
                 </div>
             </Tilt>
-            <Tilt className="Tilt" options={{ max : 25 }} style={{ height: 130, width: 130 }} >
+            <Tilt className="Tilt logo-text" options={{ max : 25 }}>
                 <div className="Tilt-inner pa3">
                 <h1 className="purple">Machine Predictions</h1>
                 </div>

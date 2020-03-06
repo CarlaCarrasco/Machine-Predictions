@@ -4,10 +4,10 @@ import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
-import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+// import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import FoodRecognition from './components/FoodRecognition/FoodRecognition';
 import ColorRecognition from './components/ColorRecognition/ColorRecognition';
-// import FamousRecognition from './components/FamousRecognition/FamousRecognition';
+import FamousRecognition from './components/FamousRecognition/FamousRecognition';
 import Footer from './components/Footer/Footer';
 import './App.css';
 require('dotenv').config();
@@ -133,12 +133,12 @@ onButtonSubmit = ()=>{
                 <Route path="/" exact component={Home} />
                 <Route path="/ColorRecognition" exact render={(routeProps) => (<ColorRecognition {...routeProps}
                   imageUrl={this.state.imageUrl} apiKey={app}/>)} />
-                <Route path="/FaceRecognition" exact render={(routeProps) => (<FaceRecognition {...routeProps}
-                  imageUrl={this.state.imageUrl} apiKey={app}/>)} />
+                {/* <Route path="/FaceRecognition" exact render={(routeProps) => (<FaceRecognition {...routeProps}
+                  imageUrl={this.state.imageUrl} apiKey={app}/>)} /> */}
                 <Route path="/FoodRecognition" exact render={(routeProps) => (<FoodRecognition {...routeProps}
                   imageUrl={this.state.imageUrl} apiKey={app}/>)} />
-                {/* <Route path="/FamousRecognition" exact render={(routeProps) => (<ColorRecognition {...routeProps}
-                  imageUrl={this.state.imageUrl} onInputChange={this.onInputChange} apiKey={app}/>)} /> */}
+                <Route path="/FamousRecognition" exact render={(routeProps) => (<FamousRecognition {...routeProps}
+                  imageUrl={this.state.imageUrl} onInputChange={this.onInputChange} apiKey={app}/>)} />
                 {/* <Route path="/FamousRecognition" exact component={FamousRecognition} apiKey={app}/> */}
               </Switch>
           </Router>

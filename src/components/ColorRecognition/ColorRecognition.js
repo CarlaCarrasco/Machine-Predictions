@@ -54,9 +54,9 @@ class ColorRecognition extends Component{
         return(
         <div className="center flex flex-column">
             <h1 className="f1 green mt0">Color Prediction</h1>
-            <div className="br2 pa3 ba dark-gray b--black-10 center" style={{backgroundColor: '#202020'}}>
+            <div className="br2 pa3 ba dark-gray b--black-10 center flex-column flex-row-ns" style={{backgroundColor: '#202020'}}>
                 <div className="min-width mr3 green"> Image Goes Here
-                    <img src={this.state.imageUrl} className="default-img db br2 br--top" 
+                    <img src={this.state.imageUrl} className="default-img db br2 br--top center" 
                     alt='' width='auto' height='250'/>
                 </div>
                 <div className="min-width pa2 ph3-ns pb3-ns">

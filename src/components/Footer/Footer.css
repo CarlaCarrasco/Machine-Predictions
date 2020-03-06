@@ -5,3 +5,36 @@
 .footer-api {
     font-style: italic;
 }
+
+.footer{
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+}
+
+/* .terminal-type {
+    + white-space: normal;
+    }
+    .terminal-type p {
+    + white-space: break-spaces;
+    }
+    div.justify-center:nth-child(1) {
+    + margin-bottom: px;
+    + margin-top: auto;
+    }
+    .ma3 {
+    - margin: 1rem;
+    }
+    .mt0 {
+    - margin-top: 0;
+    }
+    #root {
+    + height: 100vh;
+    }
+  
+    div.center:nth-child(3) {
+    + margin-bottom: 70px;
+    }
+    .footer {
+    - position: absolute;
+    } */
