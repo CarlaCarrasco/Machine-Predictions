@@ -5,7 +5,7 @@ import github from './github-icons8.png';
 
 const Footer = ()=> {
     return (
-        <footer className="flex justify-center flex-column footer relative bottom-0">
+        <footer className="flex justify-center flex-column footer fixed-ns bottom-0">
             <div className="flex justify-center flex-row">
                 <p className="ma0 pr3 footer-name">Carla Carrasco</p>
                 <a className="grow" href="https://github.com/CarlaCarrasco"><img src={ github } alt="github" style={{ height: 32, width: 32 }}/></a>
