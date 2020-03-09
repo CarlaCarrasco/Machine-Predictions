@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './ColorRecognition.css';
+import './ColorRecognition.css';
 import Clarifai from 'clarifai';
 import ImageLinkForm from '../ImageLinkForm/ImageLinkForm';
 
