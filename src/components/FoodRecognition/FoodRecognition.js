@@ -59,12 +59,12 @@ class FoodRecognition extends Component{
       render (){ return (
         <div className="center flex flex-column">
             <h1 className="f1 green mt0">Food Prediction</h1>
-            <div className="br2 pa3 ba dark-gray b--black-10 center flex-column flex-row-ns" style={{backgroundColor: '#202020'}}>
-                <div className="min-width mr3 green"> Image Goes Here
+            <div className="br2 pa3 ba dark-gray b--black-10 center flex-column flex-row-ns w-90 w-50-ns" style={{backgroundColor: '#202020'}}>
+                <div className="w-50-ns mr3 green"> Image Goes Here
                     <img src={this.state.imageUrl} className="default-img db br2 br--top center" 
                     alt='' width='auto' height='250'/>
                 </div>
-                <div className="min-width pa2 ph3-ns pb3-ns">
+                <div className="w-50-ns pa2 ph3-ns pb3-ns">
                     <div className="flex justify-between green dt mt1 bb">
                     <div className="dtc tr">
                         <h2 className="f4 mv0">Food</h2>

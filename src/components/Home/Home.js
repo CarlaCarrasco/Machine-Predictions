@@ -3,9 +3,9 @@ import './Home.css';
 
 const Home = ({imageUrl})=> {
     return (
-        <div className="center flex flex-column">
+        <div className="center flex flex-column mb6">
             <h1 className="f1 green mt0">About</h1>
-            <div className="terminal-type green" style={{letterSpacing: 0, backgroundColor: "rgb(32, 32, 32)"}}>
+            <div className="terminal-type green w-90 w-auto-ns" style={{letterSpacing: 0, backgroundColor: "rgb(32, 32, 32)"}}>
             <p className="line-1 type-writer">> Machine Predictions is a React web app built using the clarifai artificial intelligence API. 
             </p>
             <p className="line-1 type-writer"> 
