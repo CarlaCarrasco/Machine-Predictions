@@ -118,7 +118,6 @@ class App extends Component {
   }
 
 onButtonSubmit = ()=>{
-    const model = 'food';
     this.setState({imageUrl: this.state.input});
   }
   render() {

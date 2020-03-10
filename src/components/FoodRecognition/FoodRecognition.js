@@ -3,10 +3,6 @@ import Clarifai from 'clarifai';
 import './FoodRecognition.css';
 import ImageLinkForm from '../ImageLinkForm/ImageLinkForm';
 
-// const app = new Clarifai.App({
-//     apiKey: '68ce186b958f47d889a99b0e8bd03292'
-//   });
-
 class FoodRecognition extends Component{
     constructor(props) {
         super();
@@ -70,7 +66,7 @@ class FoodRecognition extends Component{
                         <h2 className="f4 mv0">Food</h2>
                     </div>
                     <div className="dtc tr">
-                        <h2 className="f4 mv0">Percentage</h2>
+                        <h2 className="f4 mv0">%</h2>
                     </div>
                     </div>
                     <ul id="hexColors" className="colorData pa0 green" style={{ listStyle: 'none'}}>

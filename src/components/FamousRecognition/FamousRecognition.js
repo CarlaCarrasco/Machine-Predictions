@@ -53,7 +53,7 @@ class FaceRecognition extends Component{
                         <h2 className="f4 mv0">Person</h2>
                     </div>
                     <div className="dtc tr">
-                        <h2 className="f4 mv0">Probability</h2>
+                        <h2 className="f4 mv0">%</h2>
                     </div>
                     </div>
                     <ul id="hexColors" className="colorData pa0 green" style={{ listStyle: 'none'}}>

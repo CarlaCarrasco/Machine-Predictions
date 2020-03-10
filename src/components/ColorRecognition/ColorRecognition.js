@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ColorRecognition.css';
+// import './ColorRecognition.css';
 import Clarifai from 'clarifai';
 import ImageLinkForm from '../ImageLinkForm/ImageLinkForm';
 
@@ -13,9 +13,9 @@ class ColorRecognition extends Component{
           recModel: '',
         } 
       }
-      componentDidMount(){
-        console.log('component mounted')
-      }
+      // componentDidMount(){
+      //   console.log('component mounted')
+      // }
       onInputChange = (event) =>{
         this.setState({input: event.target.value});
       }
